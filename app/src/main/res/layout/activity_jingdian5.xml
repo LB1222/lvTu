@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".jingdianActivity2">
+    tools:context=".jingdianActivity5">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -19,19 +19,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="意式风情街"
+                android:text="古楼大街"
                 android:textSize="30dp" />
 
             <ImageView
                 android:layout_width="200dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center_horizontal"
-                android:src="@mipmap/yishifengqingjie" />
+                android:src="@mipmap/gulou" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="意式风情街，意式风情街是原来的意租界，意租界是天津保存的相当完整的租界区，经过翻修后开放为一个具有浓郁欧式风格的特色商业街区，是比较值得打卡的景点之一，其中聚集了很多欧式酒吧和西餐厅，尤其是夏天的晚上，聚集在此吃西餐喝啤酒的人很多，其中有大量比例的外国人，还能欣赏一些欧洲的歌手驻唱，当然疫情过后肯定会受到影响。虽然此地的西餐酒吧价格会略贵一点，但是从环境上还是值价格。"
+                android:text="天津鼓楼商业街，这个商业街位于天津老城厢中心，和天津古文化街有点类似，也是一个旅游文化购物商业街，总体从特色上来说还不如古文化街，但是逛一逛也挺不错的，鼓楼地区最大的特色就是聚集了很多戏院和相声茶馆，
+                这里特别说一下天津的相声茶馆，确实是极具天津特色，环境有好有差，价格有高有低，从三四十块钱到几百块钱的都有，来天津真心推荐体验一下，点一壶茶，听听相声，评书什么的，演员表演都非常卖力，语言诙谐幽默，花钱不多一定会让你觉得物有所值。目前天津大大小小的的相声茶馆有几十家，基本上都不错，想去哪个可以提前了解一下。"
                 android:textSize="30sp" />
 
         </LinearLayout>

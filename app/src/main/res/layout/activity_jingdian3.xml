@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".jingdianActivity2">
+    tools:context=".jingdianActivity3">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -19,22 +19,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="意式风情街"
+                android:text="瓷房子古迹"
                 android:textSize="30dp" />
 
             <ImageView
                 android:layout_width="200dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center_horizontal"
-                android:src="@mipmap/yishifengqingjie" />
+                android:src="@mipmap/cifangzi" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="意式风情街，意式风情街是原来的意租界，意租界是天津保存的相当完整的租界区，经过翻修后开放为一个具有浓郁欧式风格的特色商业街区，是比较值得打卡的景点之一，其中聚集了很多欧式酒吧和西餐厅，尤其是夏天的晚上，聚集在此吃西餐喝啤酒的人很多，其中有大量比例的外国人，还能欣赏一些欧洲的歌手驻唱，当然疫情过后肯定会受到影响。虽然此地的西餐酒吧价格会略贵一点，但是从环境上还是值价格。"
+                android:text="瓷房子，天津的瓷房子名气很大，一共有两个，其中比较热门的一个在和平区赤峰道，另一个就在五大道上，本身是始建于上世纪20年代的小洋楼，其房主在2000年左右开始收集各种古董瓷片将其贴在房子上，最后形成了全身贴满古董的奇异建筑，游览和平路或者五大道的时候可以顺便过去看看，不过瓷房子从外边看和从里边看区别不大，没必要非买门票进去参观，门票较贵。"
                 android:textSize="30sp" />
 
         </LinearLayout>
     </ScrollView>
+
+
 
 </LinearLayout>

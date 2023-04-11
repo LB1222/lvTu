@@ -6,33 +6,34 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".jingdianActivity1">
+
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="标题"
-                android:textSize="30dp"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="内容介绍"
-                android:textSize="30sp"
-                />
+                android:gravity="center"
+                android:text="盘山风景区"
+                android:textSize="30dp" />
+
             <ImageView
                 android:layout_width="200dp"
                 android:layout_height="80dp"
-                android:src="@mipmap/panshan"
-                android:layout_gravity="center"
-                />
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/panshan" />
 
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="盘山，盘山是天津市除了古文化街之外的另一个5A景区，其成名于清乾隆时期，乾隆曾经多次游历盘山，并且说出了“早知有盘山，何必下江南”的美誉，盘山风景秀丽，文化底蕴深厚，如果是准备去蓟州区旅游的朋友们肯定不能错过的，但是在全国范围内来看的话，盘山作为自然景区不是特别的突出，蓟州区风景优美，自然环境优越，除了盘山以外，蓟州区翠屏湖的景色也是非常优美，绝对不亚于江南美景，但是由于保护原因不允许坐船进入，蓟州区其它著名景区还有黄崖关长城（4A），独乐寺，九山顶，九龙山，梨木台（4A），八仙山等等等等，蓟州区最著名的特色应该是农家院，蓟州区的农家院不仅环境好，服务质量高，价格实惠，最大的优点就是伙食特别好，绿色生态食品非常丰盛，尤其是翠屏湖的鱼口感极佳，没有土腥味，总的来说，蓟州区旅游适合天津及天津周边城市的居民疗养休闲。"
+                android:textSize="30sp" />
         </LinearLayout>
     </ScrollView>
 

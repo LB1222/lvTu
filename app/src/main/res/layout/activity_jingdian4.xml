@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".jingdianActivity4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="庆王府"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/qingwangfu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="五大道景区，五大道景区是全国最大最具特色的洋楼建筑群之一，是由五条主要道路构成的一个街区的总称，五大道拥有清代末年到上世纪二三十年代建成的不同国家建筑风格的花园式洋房总计两千多所，其中存在大量国内罕见的洋楼建筑精品，被称为万国建筑博览苑。清代末年到民国时期，五大道地区为名人富贾聚集区，是民国时期的高端富人区，其中有相当多在清末和民国时期叱咤风云的历史名人故居，可以说是来天津旅游必打卡景点之一，五大道整体区域较大，如果全部走路逛完时间很长而且很累，建议骑共享单车最好，游览马车80元一位，不差钱的小伙伴坐一坐没毛病，其中最不容错过的景点 就是民园体育场，民园体育场始建于1922年，原为英式跑马场，是国内最早建成的现代化体育场，现在已改为公共公园，民园体育场是一座具备浓重欧式风格的建筑精品，行走其中，你会感受到“金粉世家”剧中民国上流贵族的生活气息。民园体育场周边有很多西餐厅，在此就餐的感受，仿佛让你置身于民国时代的名流贵族谈笑风生中（怕价格不能接受的可以先美团一下看看哪个合适）。位于马场道的天津外国语大学，也是欧式教会建筑的精品，可以去看一看。名气比较大的还有庆王府，是清末太监总管小德张所建，是一座不惜工本建造的非常奢华的中式小洋楼，本身还是值得逛一逛的，但是门票30元，对于参观一个面积只有两千平米的小洋楼来说，个人觉得有点贵。五大道最著名的酒店就是和庆王府连在一起的山益里，是始建于民国的特色酒店，但是价格较贵。五大道地区是拍摄民国风素材的理想拍摄地。"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
