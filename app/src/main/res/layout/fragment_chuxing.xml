@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@mipmap/chuxing"
     tools:context=".chuxingFragment">
 <LinearLayout
     android:layout_width="match_parent"
@@ -34,90 +35,95 @@
 
             android:textSize="25sp"/>
     </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
+
+    <LinearLayout
+        style="@style/MyEditStyle"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/MyEditStyle"
-            android:orientation="vertical">
-            <TextView
-                android:id="@+id/tv_city"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="地区"
-                android:textSize="30dp"
-                android:textColor="#FF5722"
-                />
-            <TextView
-                android:id="@+id/tv_tianqi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="天气"
-                android:textSize="30dp"
-                android:layout_marginTop="20dp"
-                android:textColor="#00BCD4"
-                />
-            <TextView
-                android:id="@+id/tv_wendu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="温度"
-                android:textSize="30dp"
-                android:layout_marginTop="20dp"
-                android:textColor="#FF9800"
-                />
-            <TextView
-                android:id="@+id/tv_time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="时间"
-                android:textSize="20dp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:id="@+id/tv_week"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="20dp"
-                android:textColor="@color/black"/>
+            android:text="地区"
+            android:textColor="#000"
+            android:textSize="25dp" />
 
-        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_tianqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="天气"
+            android:textColor="#000"
+            android:textSize="25dp" />
 
+        <TextView
+            android:id="@+id/tv_wendu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="温度"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="时间"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+    </LinearLayout>
 
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="#FF9800"/>
+        android:layout_height="107dp"
+        android:background="#0000" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/btn_parse"
             android:layout_width="0dp"
             android:layout_height="60sp"
+            android:layout_marginTop="20dp"
             android:layout_weight="1"
             android:text="订单"
-            android:layout_marginTop="20dp"
-            android:textSize="15sp"/>
-            />
+            android:textSize="15sp" />
+        />
+
         <TextView
             android:id="@+id/tv_result"
+            style="@style/MyEditStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="4"
-            style="@style/MyEditStyle"
             android:layout_marginTop="20dp"
-            android:text="你订单的信息"
-            android:textSize="25sp"
-            />
+            android:layout_weight="4"
+            android:text=" 你    订     单     的     信    息"
+            android:textSize="25sp" />
 
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="#FF9800"/>
+        android:background="#FFFFFF"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -138,7 +144,7 @@
             android:text="latitute"
             android:layout_weight="1"
             android:textSize="32sp"
-            android:textColor="#FFC107"
+            android:textColor="#2A6FE4"
             android:textStyle="bold"
             android:layout_marginTop="26dp"/>
 
@@ -149,7 +155,7 @@
             android:text="Longitude"
             android:textSize="32sp"
             android:textStyle="bold"
-            android:textColor="#03A9F4"
+            android:textColor="#2972DC"
             android:layout_marginTop="26dp"/>
     </LinearLayout>
         <LinearLayout
@@ -157,32 +163,33 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="10dp">
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:id="@+id/tv_latitute"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="0.0"
-                android:textSize="24sp"
-                />
+                android:textSize="24sp" />
+
             <TextView
+                android:id="@+id/tv_longitude"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:id="@+id/tv_longitude"
                 android:text="0.0"
-                android:textSize="24sp"/>
+                android:textSize="24sp" />
 
         </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="#FF9800"/>
+        android:background="#FFFFFF"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
-        android:background="#FF9800"/>
+        android:background="#FFFFFF"/>
 
 
 
