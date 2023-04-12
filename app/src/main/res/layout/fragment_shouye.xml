@@ -21,21 +21,29 @@
                 android:elevation="10dp"
                 android:src="@mipmap/trshouye" />
 
-            <Spinner
-                android:id="@+id/spinner"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal" />
+                android:orientation="horizontal"
+                android:padding="10dp">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:textColor="#fff"
-                android:background="#3227CD"
-                android:text="提交"
-                />
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal" />
 
+                <Button
+                    android:id="@+id/bt_jiudian"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/ic_launcher_background"
+                    android:layout_gravity="center_horizontal"
+                    android:text="选择酒店" />
+
+            </LinearLayout>
             <LinearLayout
                 android:id="@+id/shouye1"
                 android:layout_width="match_parent"
