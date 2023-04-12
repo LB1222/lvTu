@@ -30,7 +30,8 @@ import date.NoteDbOpenHelper;
 
 
 public class shouyeFragment extends Fragment implements View.OnClickListener {
-Intent i1,i2,i3,i4,i5;
+Intent i1,i2,i3,i4,i5,i6;
+Button bt_jd;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -122,6 +123,16 @@ Intent i1,i2,i3,i4,i5;
         jingdian3.setOnClickListener(this);
         jingdian4.setOnClickListener(this);
         jingdian5.setOnClickListener(this);
+        bt_jd = view.findViewById(R.id.bt_jiudian);
+        bt_jd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                i6 = new Intent(getActivity(),jiudianActivity.class);
+                startActivity(i6);
+            }
+        });
+
+
 
     }
 
@@ -152,6 +163,7 @@ Intent i1,i2,i3,i4,i5;
                 i5 = new Intent(getActivity(),jingdianActivity5.class);
                 startActivity(i5);
                 break;
+
             default:
                 break;
         }
