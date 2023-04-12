@@ -30,7 +30,7 @@ import date.NoteDbOpenHelper;
 
 
 public class shouyeFragment extends Fragment implements View.OnClickListener {
-
+Intent i1,i2,i3,i4,i5;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -128,28 +128,28 @@ public class shouyeFragment extends Fragment implements View.OnClickListener {
     private void initDate() {
     }
 
-    @Override
+
     public void onClick(View v) {
         int id = v.getId();
         switch (id){
             case R.id.shouye1:
-                Intent i1 = new Intent(getActivity(),jingdianActivity1.class);
+                i1 = new Intent(getActivity(),jingdianActivity1.class);
                 startActivity(i1);
                 break;
             case R.id.shouye2:
-                Intent i2 = new Intent(getActivity(),jingdianActivity2.class);
+                i2 = new Intent(getActivity(),jingdianActivity2.class);
                 startActivity(i2);
                 break;
             case R.id.shouye3:
-                Intent i3 = new Intent(getActivity(),jingdianActivity3.class);
+                i3 = new Intent(getActivity(),jingdianActivity3.class);
                 startActivity(i3);
                 break;
             case R.id.shouye4:
-                Intent i4 = new Intent(getActivity(),jingdianActivity4.class);
+                i4 = new Intent(getActivity(),jingdianActivity4.class);
                 startActivity(i4);
                 break;
             case R.id.shouye5:
-                Intent i5 = new Intent(getActivity(),jingdianActivity5.class);
+                i5 = new Intent(getActivity(),jingdianActivity5.class);
                 startActivity(i5);
                 break;
             default:

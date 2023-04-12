@@ -41,14 +41,17 @@
 
                 <TextView
                     android:id="@+id/tv_panshan1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:gravity="center"
                     android:text="蓟县盘山风景区" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
                     android:layout_height="match_parent"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center_horizontal"
                     android:src="@mipmap/panshan" />
             </LinearLayout>
@@ -66,14 +69,17 @@
 
                 <TextView
                     android:id="@+id/tv_yishifengqingjie"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:gravity="center"
                     android:text="意式风情街" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
                     android:layout_height="match_parent"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center_horizontal"
                     android:src="@mipmap/yishifengqingjie" />
             </LinearLayout>
@@ -91,14 +97,17 @@
 
                 <TextView
                     android:id="@+id/tv_cifangzi"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:gravity="center"
                     android:text="瓷房子景区" />
 
                 <ImageView
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
                     android:layout_height="match_parent"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center_horizontal"
                     android:src="@mipmap/cifangzi" />
             </LinearLayout>
@@ -116,14 +125,17 @@
 
                 <TextView
                     android:id="@+id/tv_qingwangfu"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:gravity="center"
                     android:text="庆王府景区" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
                     android:layout_height="match_parent"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center_horizontal"
                     android:src="@mipmap/qingwangfu" />
             </LinearLayout>
@@ -141,14 +153,17 @@
 
                 <TextView
                     android:id="@+id/tv_gulou"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:gravity="center"
                     android:text="鼓楼大街" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
                     android:layout_height="match_parent"
+                    android:scaleType="fitXY"
                     android:layout_gravity="center_horizontal"
                     android:src="@mipmap/gulou" />
             </LinearLayout>

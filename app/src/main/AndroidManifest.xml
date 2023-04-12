@@ -29,6 +29,15 @@
             android:name=".jingdianActivity1"
             android:exported="false" />
         <activity
+            android:name=".jingdianActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".jingdianActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".jingdianActivity5"
+            android:exported="false" />
+        <activity
             android:name=".zhuyeActivity"
             android:exported="false" />
 
