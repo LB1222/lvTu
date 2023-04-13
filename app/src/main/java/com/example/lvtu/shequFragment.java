@@ -39,7 +39,7 @@ public class shequFragment extends Fragment {
 
     private View view;
     private RecyclerView mRecyclerView;
-    private FloatingActionButton mBtnAdd;
+
     private List<Note> mNotes;
     private MyAdapter mMyAdapter;
 
@@ -236,26 +236,26 @@ public class shequFragment extends Fragment {
 
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+            public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
 
-        switch (item.getItemId()) {
+                switch (item.getItemId()) {
 
-            case R.id.menu_linear:
-                setToLinearList();
-                currentListLayoutMode = MODE_LINEAR;
-                SpfUtil.saveInt(getActivity().getApplicationContext(), KEY_LAYOUT_MODE, MODE_LINEAR);
+                    case R.id.menu_linear:
+                        setToLinearList();
+                        currentListLayoutMode = MODE_LINEAR;
+                        SpfUtil.saveInt(getActivity().getApplicationContext(), KEY_LAYOUT_MODE, MODE_LINEAR);
 
-                return true;
-            case R.id.menu_grid:
+                        return true;
+                    case R.id.menu_grid:
 
-                setToGridList();
-                currentListLayoutMode = MODE_GRID;
-                SpfUtil.saveInt(getActivity().getApplicationContext(), KEY_LAYOUT_MODE, MODE_GRID);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-
+                        setToGridList();
+                        currentListLayoutMode = MODE_GRID;
+                        SpfUtil.saveInt(getActivity().getApplicationContext(), KEY_LAYOUT_MODE, MODE_GRID);
+                        return true;
+                    default:
+                        return super.onOptionsItemSelected(item);
         }
     }
 

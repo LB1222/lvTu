@@ -4,6 +4,7 @@ import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -25,6 +26,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -65,7 +67,7 @@ import weather.TqBean;
 
 
 public class chuxingFragment extends Fragment {
-
+     ImageButton bT_daohang;
     Button btLocation,  mbtn_parse, mBtn_weather ,mBtn_URL;
     TextView tvLatitude,tvLongitude, mtv_result ;
     TextView tv_ct,tv_wd,tv_tq, tv_tm, tv_wk;
@@ -107,6 +109,7 @@ public class chuxingFragment extends Fragment {
         // Inflate the layout for this fragment
        View view =  inflater.inflate(R.layout.fragment_chuxing, container, false);
 
+        bT_daohang = view.findViewById(R.id.btn_daohang);
        btLocation = view.findViewById(R.id.bt_location);
        tvLatitude = view.findViewById(R.id.tv_latitute);
        tvLongitude = view.findViewById(R.id.tv_longitude);
@@ -118,7 +121,21 @@ public class chuxingFragment extends Fragment {
         tv_wd = view.findViewById(R.id.tv_wendu);
         tv_tm = view.findViewById(R.id.tv_time);
         tv_wk = view.findViewById(R.id.tv_week);
+        bT_daohang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(getActivity(),"暂未安装地图",Toast.LENGTH_SHORT).show();
+                        AlertDialog.Builder bdr=new AlertDialog.Builder(getActivity());
+        bdr.setMessage("是否打开高德地图？");
+       // bdr.setTitle("欢迎");
+       // bdr.setIcon(android.R.drawable.btn_star_big_on);
+        bdr.setNegativeButton("是",null);
+        bdr.setPositiveButton("否",null);
+        bdr.setCancelable(true);
+        bdr.show();
 
+            }
+        });
 
 
         mBtn_weather.setOnClickListener(new View.OnClickListener() {
@@ -161,11 +178,17 @@ public class chuxingFragment extends Fragment {
                     for(int i=0;i<jsonArray.length();i++)
                     {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
-                        String id = jsonObject.getString("id");
-                        String name = jsonObject.getString("name");
+                        String id1 = jsonObject.getString("id1");
+                        String id2 = jsonObject.getString("id2");
                         String version = jsonObject.getString("version");
+                        String content = jsonObject.getString("content");
+                        String address = jsonObject.getString("address");
+                        String opentime = jsonObject.getString("opentime");
+                        String time1 = jsonObject.getString("time1");
+                        String time2 = jsonObject.getString("time2");
 
-                        mtv_result.append("\n id="+id+",\n name="+name+",\n version="+version);
+                        mtv_result.append("\n"+id1+"\n"+id2+"\n"+version+"\n"+content+"" +
+                                "\n"+opentime+"\n"+time1+"\n"+time2+"\n"+address+"");
                     }
                 }catch (IOException e){
                     throw new RuntimeException(e);
