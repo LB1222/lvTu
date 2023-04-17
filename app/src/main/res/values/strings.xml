@@ -2,7 +2,7 @@
     <string name="app_name">津途</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-   <string-array name="spinner_options">
+    <string-array name="spinner_options">
         <item>和平区</item>
         <item>津南区</item>
         <item>红桥区</item>
@@ -13,6 +13,7 @@
         <item>河西区</item>
         <item>蓟州区</item>
         <item>滨海新区</item>
-    </string-array>-->
+    </string-array>
+    -->
 
 </resources>

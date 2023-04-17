@@ -6,6 +6,7 @@ import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -129,10 +130,19 @@ public class chuxingFragment extends Fragment {
         bdr.setMessage("是否打开高德地图？");
        // bdr.setTitle("欢迎");
        // bdr.setIcon(android.R.drawable.btn_star_big_on);
-        bdr.setNegativeButton("是",null);
+        bdr.setNegativeButton("是", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent  i1 = new Intent(getActivity(),gaodedituActivity.class);
+                startActivity(i1);
+
+            }
+        });
         bdr.setPositiveButton("否",null);
         bdr.setCancelable(true);
         bdr.show();
+//              Intent  i1 = new Intent(getActivity(),gaodedituActivity.class);
+//                startActivity(i1);
 
             }
         });
