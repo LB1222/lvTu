@@ -4,10 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
-import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -210,7 +207,7 @@ public class shequFragment extends Fragment {
        @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
 
-        inflater.inflate(R.menu.main_menu, menu);
+        inflater.inflate(R.menu.wode_menu, menu);
         if (currentListLayoutMode == MODE_LINEAR) {
             MenuItem item = menu.findItem(R.id.menu_linear);
             item.setChecked(true);

@@ -1,5 +1,6 @@
 package com.example.lvtu;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,7 +24,7 @@ public class wodeFragment extends Fragment {
 
     ListView listView;
     SimpleAdapter simpleAdapter;
-
+    Intent i1,i2,i3,i4,i5,i6;
 
 
 
@@ -34,8 +36,23 @@ public class wodeFragment extends Fragment {
         simpleAdapter = new SimpleAdapter(getActivity(),getData(),R.layout.wode_menu_layout,new String[]{"title","image"},new int[]{R.id.myMenu_name,R.id.myMenu_image});
         listView =view.findViewById(R.id.list_wode);
         listView.setAdapter(simpleAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+              switch (position)
+              {
+                  case 0:
+                      i1 = new Intent(getActivity(),wode_1_Activity.class);
+                      startActivity(i1);
+                      break;
+                  case 1:
+                      i2 = new Intent(getActivity(),wode_2_Activity.class);
+                      startActivity(i2);
+                      break;
 
-
+              }
+            }
+        });
         return view;
     }
     private List<Map<String,Object>> getData() {
@@ -51,6 +68,7 @@ public class wodeFragment extends Fragment {
             list.add(map);
         }
         return list;
+
     }
 
 }
